@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+short value; // try this with short or char or int
+int numbits;
+int main() {
+ cout << "Enter a value ";
+ cin >> value;
+ cout << "The value is " << value;
+ numbits = sizeof(value) * 8;
+ cout << "\nThe size of the variable is " << numbits << endl;
+ value = value + 1;
+ cout << "\nPlus 1 = " << value << endl;
+}
